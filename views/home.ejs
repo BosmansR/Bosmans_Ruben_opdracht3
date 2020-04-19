@@ -1,0 +1,24 @@
+<%- include("header") -%>
+
+<div class="mainvervanger">
+  <h2>Welkom</h2>
+  <p>Welkom bij de Van Gogh Exhibition. In deze tentoonstelling worden de meest invloedrijke kunstwerken van Vincent Van Gogh gepresenteerd.</p>
+
+  <h2>Over Vincent Van Gogh</h2>
+  <p>
+    Vincent van Gogh was een Nederlands kunstschilder. Zijn werk valt onder het postimpressionisme; een kunststroming die het negentiende-eeuwse impressionisme opvolgde.
+    <br>
+    <br>
+    Tijdens zijn leven, in de negentiende eeuw, was hij niet erg populair. Van Gogh had een moeilijk leven, met veel onrust, liefdesverdriet en geldzorgen. Wanhoop hierover dreef hem tot zelfmoord. Pas na zijn dood begon zijn ster te rijzen. Aan de ene kant was dat vanwege zijn schilderijen, want die zijn krachtig, kleurig, eigenzinnig; veel mensen, van alle leeftijden, vinden zijn werk mooi. Aan de andere kant zijn mensen geïnteresseerd in het levensverhaal van Van Gogh. Hij is het schoolvoorbeeld geworden van de even geniale als eenzame kunstenaar.
+  </p>
+
+  <h2>Deze week in de kijker:</h2>
+
+  <div class="Featured">
+    <%- include ("kunstwerk",{item: items[2], index: 2})-%>
+  </div>
+
+</div>
+
+
+<%- include("footer") -%>

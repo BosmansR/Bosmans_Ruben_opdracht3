@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl-BE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Van Gogh Exhibition</title>
+
+    <link rel="stylesheet" href="/css/reset_plus.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+<main>
+  <a href="javascript:history.back()"><i class="back"></i></a>
+  <h2><%=item.titel%></h2>
+  <img src="/imgs/<%=item.afbeelding%>" class="schilderijafb" style="margin-bottom:2rem; width: 100%;">
+  <h3><%=item.uitvoerder%></h3>
+  <h4>Onderdeel van de <%=item.collectie%> collectie</h4>
+  <br>
+  <h4>Geschilderd te <%=item.plaats%></h4>
+  <br>
+  <h4>Jaartal: <%=item.jaartal%></h4>
+  <br>
+  <h4>Beschrijving:</h4>
+  <p><%=item.beschrijving%></p>
+
+</main>
+
+<script src="/js/isotope.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

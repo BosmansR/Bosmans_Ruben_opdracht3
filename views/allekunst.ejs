@@ -1,0 +1,39 @@
+<%- include("header") -%>
+
+<div class="allbtns">
+  <h2>Volledige Tentoonstelling</h2>
+
+  <div class="buttoncontainer">
+    <div class="ui-group">
+      <h4>Filter</h4>
+      <div class="button-group filters-by-button-group">
+        <button class="btn btn-default" data-filter="*">Toon alles</button>
+        <button class="btn btn-default" data-filter=".zelfportretten">Zelfportretten</button>
+        <button class="btn btn-default" data-filter=".natuur">Natuur</button>
+        <button class="btn btn-default" data-filter=".diervooorstelling">Diervoorstelling</button>
+        <button class="btn btn-default" data-filter=".interieur">Interieur</button>
+      </div>
+    </div>
+
+    <div class="ui-group">
+      <h4>Sort</h4>
+      <div class="button-group sort-by-button-group">
+        <button class="button is-checked" data-sort-value="original-order">Originele volgorde</button>
+        <button class="button" data-sort-value="naam">Naam</button>
+        <button class="button" data-sort-value="jaartal">Jaartal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="tentoonstelling">
+    <% for(let i=0; i<items.length; i++) { %>
+      <div class="item" style="margin-bottom:5rem;">
+        <%- include("kunstwerk", {item: items[i], index: i}); -%>
+      </div>
+    <% } %>
+  </div>
+</main>
+
+<%- include("footer") -%>

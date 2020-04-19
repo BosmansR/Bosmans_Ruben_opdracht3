@@ -1,0 +1,193 @@
+html {
+  font-family: helvetica;
+}
+
+header {
+  background-color: #D4B889;
+  padding: 4rem;
+  width: 100vw;
+  height: 15rem;
+  display: flex;
+}
+
+.hamburger div {
+  width: 8rem;
+  height: 1rem;
+  background-color: white;
+  margin: 2rem 0;
+}
+
+.hamburger div:nth-child(1) {
+  margin: 0;
+}
+
+.hamburger {
+  margin-right: 10rem;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+main {
+  padding: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #564538;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+footer {
+  height: 15rem;
+  background: #D4B889;
+}
+
+.footericon {
+  height: 15rem;
+  width: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------------------
+            KUNSTWERK
+-----------------------------------*/
+
+h3 {
+  color: #1E334D;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.schilderijen {
+  height: 60rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.item {
+  width: 90%;
+}
+
+/*-----------------------------------
+              INFOPAGE
+-----------------------------------*/
+
+i {
+  border: solid #D4B889;
+  border-width: 0 1rem 1rem 0;
+  display: inline-block;
+  padding: 2rem;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-bottom: 5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/*-----------------------------------
+                MENU
+-----------------------------------*/
+
+.menuback {
+  background-color: #D4B889;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.cross {
+  height: 10rem;
+  width: 10rem;
+}
+
+.cross:before, .cross:after {
+  position: absolute;
+  left: 5rem;
+  top: 7rem;
+  content: ' ';
+  height: 1rem;
+  width: 8rem;
+  background-color: white;
+}
+.cross:before {
+  transform: rotate(45deg);
+}
+.cross:after {
+  transform: rotate(-45deg);
+}
+
+.menuback a {
+  font-size: 7rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*-----------------------------------
+                CONTACT
+-----------------------------------*/
+
+.kaart {
+  background-image: url(/imgs/map.png);
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 4rem;
+  background-repeat: no-repeat;
+}
+
+input {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.mainvervanger {
+  width: 100vw;
+  height: 100%;
+  padding: 5rem;
+}
+
+/*-----------------------------------
+      VOLLEDIGE TENTOONSTELLING
+-----------------------------------*/
+
+.allbtns {
+  padding: 5rem;
+  padding-bottom: 0;
+}
+
+button {
+  color: white;
+  background-color: #D4B889;
+  font-size: 2rem;
+  padding: .5rem;
+  margin: .1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-group {
+  margin-bottom: 2rem;
+}
